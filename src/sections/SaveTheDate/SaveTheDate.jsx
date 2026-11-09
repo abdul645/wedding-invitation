@@ -37,9 +37,9 @@ export default function SaveTheDate() {
 
   calendarUrl.search = new URLSearchParams({
     action: "TEMPLATE",
-    text: `Wedding Celebration - ${weddingData.groom.name} & ${weddingData.bride.name}`,
+    text: `Wedding Celebration - ${weddingData.groom.name}`,
     dates: `${formatCalendarDate(startDate)}/${formatCalendarDate(endDate)}`,
-    details: `Join us to celebrate the wedding of ${weddingData.groom.name} and ${weddingData.bride.name}.`,
+    details: `Join us to celebrate the wedding of ${weddingData.groom.name}`,
     location: `${weddingData.wedding.venue}, ${weddingData.wedding.address}`,
   }).toString();
 
